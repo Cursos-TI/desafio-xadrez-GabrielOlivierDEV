@@ -11,37 +11,22 @@ int main() {
     int bispo_numeroCasas = 5;
     int rainha_numeroCasas = 8;
 
-// Implementação de Movimentação do Bispo
-// O bispo só pode se mover em diagonais, logo mostramos apenas essas direções.
+    // Implementação de Movimentação do Bispo
+    // O bispo só pode se mover em diagonais, logo mostramos apenas essas direções.
 
-while (bispo_numeroCasas > 0) {
-    switch (bispo_numeroCasas) {
-        case 1:
-            printf("\nBispo: Diagonal Superior Direita\n");
-            break;
-        case 2:
-            printf("\nBispo: Diagonal Superior Esquerda\n");
-            break;
-        case 3:
-            printf("\nBispo: Diagonal Inferior Esquerda\n");
-            break;
-        case 4:
-            printf("\nBispo: Diagonal Inferior Direita\n");
-            break;
-        default:
-            break;
-    }
-    bispo_numeroCasas--;
-}
+    do {
+        printf("\nBispo: Cima, Direita\n");
+        --bispo_numeroCasas;
+    } while (bispo_numeroCasas >= 1);
 
 
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
-    do {
+    while (torre_numeroCasas >= 1) {
         printf("\nTorre: Direita\n");
         torre_numeroCasas--;
-    } while (torre_numeroCasas >= 1);
+    }
 
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
